@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lemmatization-claim-audit"
+version = "0.1.0"
+description = "Offline documentation claim auditor for dictionary forms"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{name = "Documentation claim auditor contributors"}]
+dependencies = []
+
+[project.scripts]
+lemmatization-claim-audit = "lemmatization_claim_audit.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["lemmatization_claim_audit*"]
